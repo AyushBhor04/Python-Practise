@@ -37,52 +37,74 @@
 # print("Average = ",avg) 
 
 # Q8.Write a program that asks the user to enter the side of a square and prints the area of the square.
-side = int(input("Enter side of the square :"))
-print("Area = ",side**2) 
+# side = int(input("Enter side of the square :"))
+# print("Area = ",side**2) 
+
 # MEDIUM
 
-# Write a program that takes two numbers from the user and prints:
+# Q9.Write a program that takes two numbers from the user and prints:
+# their sum # their difference # their product # their division.
+# num_1=int(input("Enter any number: "))
+# num_2=int(input("Enter any number: "))
+# print("Sum = ",num_1+num_2)
+# print("Difference = ",num_1-num_2)
+# print("Product = ",num_1*num_2)
+# print("Division = ",num_1/num_2) 
 
-# their sum
+# Q10.Write a program that takes two numbers a and b from the user and prints whether a is greater than b.
+# a=int(input("Enter any number: "))
+# b=int(input("Enter any number: ")) 
+# print(a>b) 
 
-# their difference
+# Q11.Write a program that takes two numbers a and b from the user and prints whether a is greater than or equal to b.
+# a=int(input("Enter any number: "))
+# b=int(input("Enter any number: ")) 
+# print(a>=b) 
 
-# their product
+# Q12.Write a program that takes two floating numbers from the user and prints their average.
+# a=float(input("Enter any number: "))
+# b=float(input("Enter any number: ")) 
+# print("Average = ",(a+b)/2)  
 
-# their division.
+# Q13.Write a program that asks the user to enter length and width of a rectangle and prints its area.
+# len = int(input("Enter length "))
+# bre = int(input("Enter breadth "))  
+# print("Area of rectangle = ",len*bre) 
 
-# Write a program that takes two numbers a and b from the user and prints whether a is greater than b.
-
-# Write a program that takes two numbers a and b from the user and prints whether a is greater than or equal to b.
-
-# Write a program that takes two floating numbers from the user and prints their average.
-
-# Write a program that asks the user to enter length and width of a rectangle and prints its area.
-
-# Write a program that asks the user to enter a number and prints:
-
-# The cube of the number is ___
-
-# Write a program that asks the user to enter two numbers and prints the remainder when the first number is divided by the second number.
+# Q14.Write a program that asks the user to enter two numbers and prints the remainder when the first number is divided by the second number.
+# a=int(input("Enter a "))
+# b=int(input("Enter b ")) 
+# print("Modulus = ",a%b)  
 
 # HARD
 
-# Write a program that asks the user to enter three numbers and prints their average.
+# Q15.Write a program that asks the user to enter three numbers and prints their average.
+# a=float(input("Enter any number: "))
+# b=float(input("Enter any number: ")) 
+# c=float(input("Enter any number: "))
+# print("Average = ",(a+b+c)/3)  
 
-# Write a program that asks the user to enter two numbers and prints True if the first number is divisible by the second number, otherwise False.
+# Q16.Write a program that asks the user to enter two numbers and prints True if the first number is divisible by the second number, otherwise False.
+# a=float(input("Enter any number: "))
+# b=float(input("Enter any number: ")) 
+# if(a%b==0):
+#     print("true")
+# else:
+#     print("False") 
 
-# Write a program that asks the user to enter three numbers and prints the largest number among them using relational operators.
 
-# Write a program that asks the user to enter:
 
-# name
-
-# age
-
-# city
-
-# Then print a sentence like:
-
+# Q17.Write a program that asks the user to enter: # name # age # city 
+# # Then print a sentence like:
 # My name is ___, I am ___ years old and I live in ___.
+name = input("Enter name ")
+age = input("Enter age ")
+city = input("Enter city ") 
+print("My name is ",name+"I am ",age+"years old","I live in ",city)  
 
-# Write a program that takes two numbers as strings, converts them into integers, and prints their sum.
+# Q18.Write a program that takes two numbers as strings, converts them into integers, and prints their sum.
+# a=input("Enter any number: ")
+# b=input("Enter any number: ") 
+# c=int(a)
+# d=int(b)
+# print(c+d)  
