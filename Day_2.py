@@ -6,7 +6,7 @@
 
 # Q2.Write a program that takes any value from the user and prints:
 # the value & its datatype.
-# value=input("Enter any value: ")
+# value=input("Enter any value: ") 
 # print(type(value),value)   
 
 # Q3.Write a program that asks the user to enter a number and prints the number along with its datatype.
@@ -92,15 +92,13 @@
 # else:
 #     print("False") 
 
-
-
 # Q17.Write a program that asks the user to enter: # name # age # city 
 # # Then print a sentence like:
 # My name is ___, I am ___ years old and I live in ___.
-name = input("Enter name ")
-age = input("Enter age ")
-city = input("Enter city ") 
-print("My name is ",name+"I am ",age+"years old","I live in ",city)  
+# name = input("Enter name ")
+# age = input("Enter age ")
+# city = input("Enter city ") 
+# print("My name is ",name+"I am ",age+"years old","I live in ",city)  
 
 # Q18.Write a program that takes two numbers as strings, converts them into integers, and prints their sum.
 # a=input("Enter any number: ")
