@@ -63,50 +63,109 @@
 # else:
 #     print("c is the greatest") 
 
-
 #Q8.Take a number and check:
 # divisible by both 3 and 5 # only by 3 # only by 5 # neither
-num=int(input("Enter any number : "))
-if(num%3==0 and num%5==0):
-    print("Divisible by both 3 and 5")
-elif(num%3==0):
-    print("Divisible by 3 only")
-elif(num%5==0):
-    print("Divisible by 5 only")
-else:
-    print("Divisible by None") 
+# num=int(input("Enter any number : "))
+# if(num%3==0 and num%5==0):
+#     print("Divisible by both 3 and 5")
+# elif(num%3==0):
+#     print("Divisible by 3 only")
+# elif(num%5==0):
+#     print("Divisible by 5 only")
+# else:
+#     print("Divisible by None") 
+
+#Q9. Take marks and assign grade: # ≥90 → A # 80–89 → B # 70–79 → C # <70 → D
+# marks=int(input("Enter your marks : "))
+# if(marks>=90):
+#     print("A")
+# elif(marks>=80 and marks<=89):
+#     print("B")
+# elif(marks>=70 and marks<=79):
+#     print("C")
+# else:
+#     print("D") 
+
+#Q10. Take age and check: # <18 → minor # 18–60 → adult # 60 → senior citizen
+# age=int(input("Enter your age : "))
+# if(age<18):
+#     print("Minor")
+# elif(age>=18 and age<=60):
+#     print("Adult")
+# else:
+#     print("Senior Citizen") 
+
+#Q11. Take a number and check: if it is a multiple of 7 and also check if it is even or odd
+# a = int(input("Enter any number : "))
+# if(a%7==0):
+#     if(a%2==0):
+#         print("Divisble and even")
+#     else:
+#         print("Divisible and odd") 
+# else:
+#     print("Not divisible")  
+
+#HARD
+
+#Q12. Take three numbers and print: greatest / smallest
+# a = int(input("Enter any number : "))
+# b = int(input("Enter any number : "))
+# c = int(input("Enter any number : "))
+# if(a>b and a>c):
+#     print("A is greatest")
+# elif(b>a and b>c):
+#     print("B is the greatest")
+# else:
+#     print("C is the greatest") 
+
+#Q13.Take a year and check whether it is a leap year (Hint: divisible by 4, but special case with 100 and 400)
+# year = int(input("Enter any year : "))
+# if(year%400==0):
+#     print("Leap year")
+# elif(year%4==0 and year%100!=0):
+#     print("Leap year")
+# else:
+#     print("Not") 
+
+#Q14. Take a number and classify it as: single digit two digit three digit more
+num = int(input("Enter any number : "))
+count = 0 
+while(num/10):
+    count += 1 
+print(count)
 
 
-#Q9. Take marks and assign grade:
 
-# ≥90 → A
-# 80–89 → B
-# 70–79 → C
-# <70 → D
-# 10
 
-# Take age and check:
 
-# <18 → minor
-# 18–60 → adult
+# Take a number and check whether it is:
 
-# 60 → senior citizen
+# positive even
+# positive odd
+# negative even
+# negative odd
+# 20
 
-# 11
+# Take three numbers and check whether they can form a valid triangle
+# (Hint: sum of any two sides > third)
 
-# Take a number and check:
+# BONUS (Important for real coding maturity)
+# 21
 
-# if it is a multiple of 7
-# and also check if it is even or odd
-# 12
+# Take username and password:
 
-# Take two numbers and check:
+# if both match predefined values → Login Successful
+# else → Invalid credentials
+# 22
 
-# if they are equal
-# if not, print the greater one
-# 13
+# Take a number and:
 
-# Take a number and check whether it lies:
+# if divisible by 3 → print "Fizz"
+# if divisible by 5 → print "Buzz"
+# if both → "FizzBuzz"
+# 23
 
-# between 10 and 50 (inclusive)
-# outside this range
+# Take age and salary:
+
+# age ≥ 21 AND salary ≥ 25000 → Eligible for loan
+# else → Not eligible
