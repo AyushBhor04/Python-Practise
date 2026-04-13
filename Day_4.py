@@ -128,44 +128,23 @@
 #     print("Not") 
 
 #Q14. Take a number and classify it as: single digit two digit three digit more
-num = int(input("Enter any number : "))
-count = 0 
-while(num/10):
-    count += 1 
-print(count)
+#num = int(input("Enter any number : "))
+# if(num>=1 and num<10):
+#     print("1 digit")
+# elif(num>9 and num<100):
+#     print("2 digit")
+# elif(num>=100 and num<1000):
+#     print("3 digit")
+# elif(num>999):
+#     print("4 digit and more") 
 
-
-
-
-
-# Take a number and check whether it is:
-
-# positive even
-# positive odd
-# negative even
-# negative odd
-# 20
-
-# Take three numbers and check whether they can form a valid triangle
-# (Hint: sum of any two sides > third)
-
-# BONUS (Important for real coding maturity)
-# 21
-
-# Take username and password:
-
-# if both match predefined values → Login Successful
-# else → Invalid credentials
-# 22
-
-# Take a number and:
-
-# if divisible by 3 → print "Fizz"
-# if divisible by 5 → print "Buzz"
-# if both → "FizzBuzz"
-# 23
-
-# Take age and salary:
-
-# age ≥ 21 AND salary ≥ 25000 → Eligible for loan
-# else → Not eligible
+#Q15. Take age and salary: # age ≥ 21 AND salary ≥ 25000 → Eligible for loan # else → Not eligible
+age = int(input("Enter your age : "))
+salary = int(input("Enter your salary : "))
+if(age<21):
+    print("Not Eligible")
+elif(age>=21):
+    if(salary>=25000):
+        print("Eligible for loan")
+    else:
+        print("Not Eligible") 
