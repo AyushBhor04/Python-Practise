@@ -85,7 +85,7 @@
 # else:
 #     print("Not Palindrome") 
 
-#Q16. Take two lists and:merge them into one list
+#Q16.Take two lists and:merge them into one list
 # list1 = [1, 2, 3]
 # list2 = [4, 5, 6]
 # merged = list1 + list2
