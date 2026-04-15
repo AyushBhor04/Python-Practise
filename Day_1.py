@@ -172,7 +172,7 @@
 # z = 30
 # print(z > y and y > x ) 
 
-#Q28. Write a program to swap two numbers:
+#Q28.Write a program to swap two numbers:
 # a = 5
 # b = 10
 # temp = a 
