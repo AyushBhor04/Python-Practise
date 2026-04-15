@@ -93,7 +93,7 @@
 #Q16.Check whether 100 is greater than or equal to 90.
 # print(100>=90)  
 
-#Q17. Create
+#Q17.Create
 #a = 20# b = 10
 #Check:
 #(a > b) and (b > 5)
