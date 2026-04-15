@@ -79,6 +79,7 @@
 # print(str.count("h")) 
 
 #HARD
+
 #Q13.Take the user’s name as input and print the length of the name.
 # str=input("Enter your name : ")
 # print(str)
