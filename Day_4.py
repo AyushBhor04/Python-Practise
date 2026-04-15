@@ -1,4 +1,4 @@
-# DAY-4 
+#DAY-4 
 
 #EASY
 
@@ -147,4 +147,4 @@
 #     if(salary>=25000):
 #         print("Eligible for loan")
 #     else:
-#         print("Not Eligible") 
+#         print("Not Eligible")
