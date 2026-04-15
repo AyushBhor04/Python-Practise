@@ -58,41 +58,35 @@
 # print("Reversed list ",list) 
 
 #Q11.Take a list of numbers and count how many times a number appears
-# list = [1,2,1,3,4,1,5,1,6,7,1,]
+# list = [1,2,1,3,4,1,5,1,6,7,1]
 # print("1 appeared : ",list.count(1),"times") 
 
 #HARD
 
-#Q12.Take a list and:
+#Q12.Take a list of numbers and: calculate the sum of all elements 
+# list = [1,2,3,4,5,6]
+# print(sum(list)) 
 
-# create a new list containing only odd numbers
-# 15
+#Q13.Take a list and:find the second largest number
+# lst = [10, 5, 8, 20, 15]
+# lst.sort() 
+# second_largest = lst[-2]
+# print("Second largest:", second_largest)
 
-# Take a list of numbers and:
+#Q14.Take a list and: remove all duplicate elements
+# lst = [1, 2, 2, 3, 4, 4, 5]
+# unique_lst = set(lst) 
+# print("After removing duplicates:", unique_lst)
 
-# calculate the sum of all elements manually (no sum())
-# 16
+#Q15.Take a list and: check whether it is a palindrome
+# lst = [1, 2, 3, 2, 1] 
+# if lst == lst[::-1]:
+#     print("Palindrome")
+# else:
+#     print("Not Palindrome") 
 
-# Take a list and:
-
-# find the second largest number
-# 17
-
-# Take a list and:
-
-# remove all duplicate elements
-# 18
-
-# Take a list and:
-
-# check whether it is a palindrome
-# 19
-
-# Take two lists and:
-
-# merge them into one list
-# 20
-
-# Take a list and:
-
-# swap first and last elements
+#Q16. Take two lists and:merge them into one list
+list1 = [1, 2, 3]
+list2 = [4, 5, 6]
+merged = list1 + list2
+print("Merged list:", merged) 
