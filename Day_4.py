@@ -1,8 +1,8 @@
-# DAY - 4 
+# DAY-4 
 
 #EASY
 
-#Q1. Take a number and check whether it is:
+#Q1.Take a number and check whether it is:
 # positive negative zero
 # num = int(input("Enter any number : "))
 # if(num>0):
@@ -34,7 +34,7 @@
 # else:
 #     print("Failed")
 
-#Q5. Take age as input and check:
+#Q5.Take age as input and check:
 # eligible to vote (≥18)  not eligible otherwise
 # age = int(input("Enter your age : "))
 # if(age>18):
@@ -42,7 +42,7 @@
 # else:
 #     print("Not eligible") 
 
-#Q6. Take two numbers and print the greater number.
+#Q6.Take two numbers and print the greater number.
 # a=int(input("Enter a number : "))
 # b=int(input("Enter a number : "))
 # if(a>b):
@@ -75,7 +75,7 @@
 # else:
 #     print("Divisible by None") 
 
-#Q9. Take marks and assign grade: # ≥90 → A # 80–89 → B # 70–79 → C # <70 → D
+#Q9.Take marks and assign grade: # ≥90 → A # 80–89 → B # 70–79 → C # <70 → D
 # marks=int(input("Enter your marks : "))
 # if(marks>=90):
 #     print("A")
@@ -86,7 +86,7 @@
 # else:
 #     print("D") 
 
-#Q10. Take age and check: # <18 → minor # 18–60 → adult # 60 → senior citizen
+#Q10.Take age and check: # <18 → minor # 18–60 → adult # 60 → senior citizen
 # age=int(input("Enter your age : "))
 # if(age<18):
 #     print("Minor")
@@ -95,7 +95,7 @@
 # else:
 #     print("Senior Citizen") 
 
-#Q11. Take a number and check: if it is a multiple of 7 and also check if it is even or odd
+#Q11.Take a number and check: if it is a multiple of 7 and also check if it is even or odd
 # a = int(input("Enter any number : "))
 # if(a%7==0):
 #     if(a%2==0):
@@ -107,7 +107,7 @@
 
 #HARD
 
-#Q12. Take three numbers and print: greatest / smallest
+#Q12.Take three numbers and print: greatest / smallest
 # a = int(input("Enter any number : "))
 # b = int(input("Enter any number : "))
 # c = int(input("Enter any number : "))
@@ -127,7 +127,7 @@
 # else:
 #     print("Not") 
 
-#Q14. Take a number and classify it as: single digit two digit three digit more
+#Q14.Take a number and classify it as: single digit two digit three digit more
 #num = int(input("Enter any number : "))
 # if(num>=1 and num<10):
 #     print("1 digit")
@@ -138,13 +138,13 @@
 # elif(num>999):
 #     print("4 digit and more") 
 
-#Q15. Take age and salary: # age ≥ 21 AND salary ≥ 25000 → Eligible for loan # else → Not eligible
-age = int(input("Enter your age : "))
-salary = int(input("Enter your salary : "))
-if(age<21):
-    print("Not Eligible")
-elif(age>=21):
-    if(salary>=25000):
-        print("Eligible for loan")
-    else:
-        print("Not Eligible") 
+#Q15.Take age and salary: # age ≥ 21 AND salary ≥ 25000 → Eligible for loan # else → Not eligible
+# age = int(input("Enter your age : "))
+# salary = int(input("Enter your salary : "))
+# if(age<21):
+#     print("Not Eligible")
+# elif(age>=21):
+#     if(salary>=25000):
+#         print("Eligible for loan")
+#     else:
+#         print("Not Eligible") 
