@@ -115,7 +115,7 @@
 # else:
 #     print("The Light is broken") 
 
-# Q19.Take a number from the user and check whether it is: # greater than 10 or less than or equal to 10
+#Q19.Take a number from the user and check whether it is: # greater than 10 or less than or equal to 10
 # num=int(input("Enter any number : ")) 
 # if(num>10 or num<10):
 #     if(num>10):
@@ -125,14 +125,14 @@
 # else:
 #     print("Equal to 10") 
 
-# Q20.Take a number and check whether it is positive or negative.
+#Q20.Take a number and check whether it is positive or negative.
 # num=int(input("Enter any number : ")) 
 # if(num>0):
 #     print("Positive") 
 # else:
 #     print("Negative") 
 
-# Q21.Take two numbers and print which one is greater.
+#Q21.Take two numbers and print which one is greater.
 # a=int(input("Enter any number : "))
 # b=int(input("Enter any number : "))
 # if(a>b):
@@ -140,11 +140,11 @@
 # else:
 #     print(b) 
 
-# Q22.Take a string and count how many times a specific character appears (user input).
+#Q22.Take a string and count how many times a specific character appears (user input).
 # str=input("Enter any string : ")
 # val=input("ENter the character to be checked : ")
 # print(str.count(val)) 
 
-# Q23.Take a string and replace all spaces with underscores _.
+#Q23.Take a string and replace all spaces with underscores _.
 # str=input("Enter any string : ")
 # print(str.replace(" ","_"))
