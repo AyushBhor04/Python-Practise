@@ -91,7 +91,7 @@
 # print(lst_1) 
 
 #Q16.Take a list of grades:["A", "B", "A", "C", "B", "A"] and count how many students got each grade.
-grades=["A", "B", "A", "C", "B", "A"]
-print("A :",grades.count("A"))
-print("B :",grades.count("B"))
-print("C :",grades.count("C"))
+# grades=["A", "B", "A", "C", "B", "A"]
+# print("A :",grades.count("A"))
+# print("B :",grades.count("B"))
+# print("C :",grades.count("C"))
