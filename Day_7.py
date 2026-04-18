@@ -69,36 +69,146 @@
 # print("Subject :",student["subject"])  
 
 #Q8.Create a dictionary and check if a key exists using .get()
-my_dict = {
-    "name": "Ayush",
-    "age": 23,
-    "course": "M.Tech"
-}
+# info = {
+#     "name": "Ayush",
+#     "age": 23,
+#     "course": "M.Tech"
+# }
+# key = "age"
+# if info.get(key) is not None:
+#     print("Key exists")
+# else:
+#     print("Key does not exist")
 
+#Q9.Create a dictionary and: convert keys into a list AND convert values into a list
+# info = {
+#     "name": "Ayush",
+#     "age": 23,
+#     "course": "M.Tech"
+# }
+# keys_list = list(info.keys())
+# values_list = list(info.values())
+# print("Keys:", keys_list)
+# print("Values:", values_list)
 
-# Create a dictionary and:
+#Q10.Create two dictionaries and merge them using .update()
+# dict1 = {
+#     "name": "Ayush",
+#     "age": 23
+# }
+# dict2 = {
+#     "course": "M.Tech",
+#     "city": "Mumbai"
+# }
+# dict1.update(dict2)
+# print(dict1)
 
-# convert keys into a list
-# convert values into a list
-# 10
+#Q11.Create a nested dictionary for a student: name,subjects → (phy, chem, math marks) # Print the marks of one subject.
+# student = {
+#     "name": "Ayush",
+#     "subjects": {
+#         "phy": 85,
+#         "chem": 90,
+#         "math": 95
+#     }
+# }
+# print("Chemistry marks:", student["subjects"]["chem"])
 
-# Create two dictionaries and:
+#Q12.Create a dictionary and print all key-value pairs using .items()
+# info = {
+#     "name": "Ayush",
+#     "age": 23,
+#     "course": "M.Tech"
+# }
+# for key, value in info.items():
+#     print(key, ":", value)
 
-# merge them using .update()
-# 11
+#Q13.Create a dictionary and: change multiple values using another dictionary
+# info = {
+#     "name": "Ayush",
+#     "age": 23,
+#     "city": "Mumbai"
+# }
+# update_data = {
+#     "age": 24,
+#     "city": "Pune"
+# }
+# info.update(update_data)
+# print(info)
 
-# Create a nested dictionary for a student:
+#HARD
 
-# name
-# subjects → (phy, chem, math marks)
-# Print the marks of one subject.
-# 12
+#Q14.Take input of 3 subjects and marks from user and store in a dictionary.
+# marks = {}
+# for i in range(3):
+#     subject = input("Enter subject name: ")
+#     score = int(input("Enter marks: "))
+#     marks[subject] = score
+# print("Marks dictionary:", marks)
 
-# Create a dictionary and:
+#Q15.Create a dictionary and: find the key with the maximum value
+# marks = {
+#     "phy": 85,
+#     "chem": 90,
+#     "math": 95
+# }
+# max_key = max(marks, key=marks.get)
+# print("Subject with highest marks:", max_key)
 
-# print all key-value pairs using .items()
-# 13
+#Q16.Create a dictionary and:count how many values are greater than a given number
+# marks = {
+#     "phy": 85,
+#     "chem": 90,
+#     "math": 95
+# }
+# threshold = int(input("Enter number: "))
+# count = 0
+# for value in marks.values():
+#     if value > threshold:
+#         count += 1
+# print("Count:", count)
 
-# Create a dictionary and:
+#Q17.Create a dictionary and:remove a key (without using built-in pop directly if possible)
+# info = {
+#     "name": "Ayush",
+#     "age": 23,
+#     "city": "Mumbai"
+# }
+# key_to_remove = "age"
+# if key_to_remove in info:
+#     del info[key_to_remove]
+# print(info)
 
-# change multiple values using another dictionary
+#Q18.Create a dictionary and swap keys and values. Example:# {"a":1, "b":2} → {1:"a", 2:"b"}
+# data = {"a": 1, "b": 2, "c": 3}
+# swapped = {}
+# for key, value in data.items():
+#     swapped[value] = key
+# print(swapped)
+
+#Q19.Create a dictionary of words and count frequency of each character in a string # Example "apple" → {"a":1, "p":2, "l":1, "e":1}
+# word = "apple"
+# freq = {}
+# for char in word:
+#     if char in freq:
+#         freq[char] += 1
+#     else:
+#         freq[char] = 1
+# print(freq)
+
+#Q20.Create a nested dictionary and: # print all inner keys and values
+# students = {
+#     "student1": {
+#         "phy": 85,
+#         "chem": 90
+#     },
+#     "student2": {
+#         "phy": 78,
+#         "chem": 88
+#     }
+# }
+# for student, subjects in students.items():
+#     print(student)
+    
+#     for subject, marks in subjects.items():
+#         print(" ", subject, ":", marks)
