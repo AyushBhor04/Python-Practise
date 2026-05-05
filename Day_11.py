@@ -80,68 +80,136 @@
 # print(xyz)
 
 #Q10.Write a function to count vowels in a string
+# def count_vowels(s):
+#     count = 0
+#     for ch in s.lower():
+#         if ch in "aeiou":
+#             count += 1
+#     return count
+# text = input("Enter a string: ")
+# print("Vowel count:", count_vowels(text))
 
 #Q11.Write a function to take a list return sum of all elements
+# def list_sum(lst):
+#     total = 0
+#     for num in lst:
+#         total += num
+#     return total
+# nums = [1, 2, 3, 4, 5]
+# print("Sum:", list_sum(nums))
 
-#Write a function to: 
+#Q12.Write a function to check if a number is prime 
+# def is_prime(n):
+#     if n <= 1:
+#         return False
+    
+#     for i in range(2, int(n**0.5) + 1):
+#         if n % i == 0:
+#             return False
+#     return True
+# num = int(input("Enter a number: "))
+# if is_prime(num):
+#     print("Prime")
+# else:
+#     print("Not Prime")
 
-# check if a number is prime 
+#HARD
 
-# HARD (Function thinking + structure)
-# 14
+#Q13.Write a function to find second largest number in a list
+# def second_largest(lst):
+#     largest = second = float('-inf')
+#     for num in lst:
+#         if num > largest:
+#             second = largest
+#             largest = num
+#         elif num > second and num != largest:
+#             second = num
+#     if second == float('-inf'):
+#         return "No second largest element"
+#     return second
+# print(second_largest([4, 7, 2, 9, 5]))
 
-# Write a function to:
+#Q14.Write a function to remove duplicates from a list
+# def remove_duplicates(lst):
+#     result = []
+#     for num in lst:
+#         if num not in result:
+#             result.append(num)
+#     return result
+# print(remove_duplicates([1, 2, 2, 3, 1, 4]))
 
-# find second largest number in a list
-# 15
+#Q15.Write a function to return reversed version of a list
+# def reverse_list(lst):
+#     rev = []
+#     for i in range(len(lst) - 1, -1, -1):
+#         rev.append(lst[i])
+#     return rev
+# print(reverse_list([1, 2, 3, 4]))
 
-# Write a function to:
+#Q16.Write a function to count frequency of elements in a list (use dictionary)
+# def frequency(lst):
+#     freq = {}
+#     for num in lst:
+#         if num in freq:
+#             freq[num] += 1
+#         else:
+#             freq[num] = 1
+#     return freq
+# print(frequency([1, 2, 2, 3, 1, 4]))
 
-# remove duplicates from a list
-# 16
+#Q17.Write a function to check if a string is palindrome 
+# def is_palindrome(s):
+#     return s == s[::-1]
+# text = input("Enter a string: ")
+# if is_palindrome(text):
+#     print("Palindrome")
+# else:
+#     print("Not Palindrome")
 
-# Write a function to:
+#RECURSION 
 
-# return reversed version of a list
-# 17
+#Q18.Write a recursive function to print numbers from 1 to N
+# def print_1_to_n(n):
+#     if n == 0:
+#         return
+#     print_1_to_n(n - 1)
+#     print(n)
+# print_1_to_n(5) 
 
-# Write a function to:
+#Q19.Write a recursive function to calculate factorial
+# def fact(n):
+#     if n == 0 or n == 1:
+#         return 1
+#     return n * fact(n - 1)
+# print(fact(5))
 
-# count frequency of elements in a list (use dictionary)
-# 18
+#Q20.Write a recursive function to calculate sum of first N numbers
+# def sum_n(n):
+#     if n == 1:
+#         return 1
+#     return n + sum_n(n - 1)
+# print(sum_n(5)) 
 
-# Write a function to:
+#Q21.Write a recursive function to find nth Fibonacci number
+# def fib(n):
+#     if n == 0:
+#         return 0
+#     if n == 1:
+#         return 1
+#     return fib(n - 1) + fib(n - 2)
+# print(fib(6))
 
-# check if a string is palindrome 
+#Q22.Write a recursive function to reverse a string
+# def reverse_string(s):
+#     if len(s) == 0:
+#         return s
+#     return reverse_string(s[1:]) + s[0]
+# print(reverse_string("hello"))
 
-# RECURSION (Very important — don’t skip)
-# 19
-
-# Write a recursive function to:
-
-# print numbers from 1 to N
-# 20
-
-# Write a recursive function to:
-
-# calculate factorial
-# 21
-
-# Write a recursive function to:
-
-# calculate sum of first N numbers
-# 22
-
-# Write a recursive function to:
-
-# find nth Fibonacci number
-# 23
-
-# Write a recursive function to:
-
-# reverse a string
-# 24
-
-# Write a recursive function to:
-
-# count digits in a number
+#Q23.Write a recursive function to count digits in a number 
+# def count_digits(n):
+#     n = abs(n)
+#     if n < 10:
+#         return 1
+#     return 1 + count_digits(n // 10)
+# print(count_digits(12345))
