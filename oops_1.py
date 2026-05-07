@@ -2,7 +2,7 @@
 
 #EASY
 
-#Q1.Create a class Car with attributes brand and color , create 2 objects and print their values.
+#Q1.Create a class Car with attributes brand and color,create 2 objects and print their values.
 # class Car:
 #     brand="Audi"
 #     color="Black"
@@ -69,7 +69,7 @@
  
 #MEDIUM
 
-#Q7.Create a class BankAccount with: account holder balance ; Add methods: deposit withdraw check balance
+#Q7.Create a class BankAccount with: account holder balance;Add methods: deposit withdraw check balance
 # class BankAccount:
 #     def __init__(self,name,balance):
 #         self.name=name 
@@ -156,7 +156,7 @@
 # print("\nAfter Discount:")
 # m1.display()
 
-#Q12.Create a class Person with name , age ;Add method:check if person is adult or minor.  
+#Q12.Create a class Person with name,age;Add method:check if person is adult or minor.  
 # class Person:
 #     def __init__(self,name,age):
 #         self.name=name
@@ -173,82 +173,189 @@
 
 #HARD 
 
-# Create a class Account with:
+#Q13.Create a class Account with:balance,account number;Add methods:credit debit money
+# class Account:
+#     def __init__(self,balance,name):
+#         self.name=name
+#         self.balance=balance
+#     def credit(self,val):
+#         self.balance=self.balance+val
+#         print("Balance of",self.name,"after latest credit:",self.balance)
+#     def debit(self,val):
+#         self.balance=self.balance-val
+#         print("Balance of",self.name,"after latest debit:",self.balance)
+# acc1=Account(100,"Ayush")
+# acc1.credit(100)
+# acc1.debit(50)
 
-# balance
-# account number
+#Q14.Create a class Student and store marks in list calculate highest marks calculate average
+# class Student:
+#     def __init__(self, name, marks):
+#         self.name = name
+#         self.marks = marks
+#     def average(self):
+#         total = 0
+#         for val in self.marks:
+#             total += val
+#         avg = total / len(self.marks)
+#         print("Student name:", self.name)
+#         print("Average marks:", avg)
+#     def highest_marks(self):
+#         highest = self.marks[0]
+#         for val in self.marks:
+#             if val > highest:
+#                 highest = val
+#         print("Highest marks:", highest)
+# s1 = Student("Ayush", [98, 95, 92])
+# s1.average()
+# s1.highest_marks()
 
-# Add methods:
+#Q15.Create a class ShoppingCart:add items remove items calculate total bill
+# class ShoppingCart:
+#     def __init__(self):
+#         self.items = []
+#     def add_item(self, price):
+#         self.items.append(price)
+#         print(price, "added to cart")
+#     def remove_item(self, price):
+#         if price in self.items:
+#             self.items.remove(price)
+#             print(price, "removed from cart")
+#         else:
+#             print("Item not found")
+#     def calculate_total(self):
+#         total = 0
+#         for price in self.items:
+#             total += price
+#         print("Total bill:", total)
+# cart = ShoppingCart()
+# cart.add_item(100)
+# cart.add_item(250)
+# cart.add_item(50)
+# cart.calculate_total()
+# cart.remove_item(250)
+# cart.calculate_total()
 
-# credit
-# debit
-# transfer money
-# 14
+#Q16.Create a class Library:store books in list issue a book return a book
+# class Library:
+#     def __init__(self):
+#         self.books = []
+#     def add_book(self, book):
+#         self.books.append(book)
+#         print(book, "added to library")
+#     def issue_book(self, book):
+#         if book in self.books:
+#             self.books.remove(book)
+#             print(book, "issued")
+#         else:
+#             print("Book not available")
+#     def return_book(self, book):
+#         self.books.append(book)
+#         print(book, "returned")
+#     def show_books(self):
+#         print("Books in library:", self.books)
+# lib = Library()
+# lib.add_book("Python")
+# lib.add_book("Java")
+# lib.show_books()
+# lib.issue_book("Python")
+# lib.show_books()
+# lib.return_book("Python")
+# lib.show_books()
 
-# Create a class Student and:
+#Q17.Create a class ATM:check PIN withdraw cash deposit cash,check balance
+# class ATM:
+#     def __init__(self, pin, balance):
+#         self.pin = pin
+#         self.balance = balance
+#     def check_pin(self, entered_pin):
+#         return self.pin == entered_pin
+#     def deposit(self, amount):
+#         self.balance += amount
+#         print("Deposited:", amount)
+#     def withdraw(self, amount):
+#         if amount <= self.balance:
+#             self.balance -= amount
+#             print("Withdrawn:", amount)
+#         else:
+#             print("Insufficient balance")
+#     def check_balance(self):
+#         print("Balance:", self.balance)
+# atm = ATM(1234, 10000)
+# if atm.check_pin(1234):
+#     atm.deposit(500)
+#     atm.withdraw(2000)
+#     atm.check_balance()
+# else:
+#     print("Wrong PIN")
 
-# store marks in list
-# calculate highest marks
-# calculate average
-# 15
+#Q18.Create a class Movie:movie name rating duration,Add method:check if movie is hit (rating > 8)
+# class Movie:
+#     def __init__(self, name, rating, duration):
+#         self.name = name
+#         self.rating = rating
+#         self.duration = duration
 
-# Create a class ShoppingCart:
+#     def is_hit(self):
+#         if self.rating > 8:
+#             print(self.name, "is a hit movie")
+#         else:
+#             print(self.name, "is not a hit movie")
+# m1 = Movie("Inception", 8.8, 148)
+# m1.is_hit()
 
-# add items
-# remove items
-# calculate total bill
-# 16
+#STATIC_METHOD
 
-# Create a class Library:
+#Q19.Create a class with:a static method that prints welcome message.
+# class Demo:
+#     @staticmethod
+#     def welcome():
+#         print("Welcome to Python OOP")
+# Demo.welcome()
 
-# store books in list
-# issue a book
-# return a book
-# 17
+#Q20.Create a class MathUtils with static methods:square,cube.
+# class MathUtils:
+#     @staticmethod
+#     def square(n):
+#         return n * n
+#     @staticmethod
+#     def cube(n):
+#         return n * n * n
+# print(MathUtils.square(4))
+# print(MathUtils.cube(3))
 
-# Create a class ATM:
+#ABSTRACTION
 
-# check PIN
-# withdraw cash
-# deposit cash
-# check balance
-# 18
+#Q21.Create a class Fan:state ON/OFF,methods:turn on turn off
+# class Fan:
+#     def __init__(self):
+#         self.state = "OFF"
+#     def turn_on(self):
+#         self.state = "ON"
+#         print("Fan turned ON")
+#     def turn_off(self):
+#         self.state = "OFF"
+#         print("Fan turned OFF")
+# f1 = Fan()
+# f1.turn_on()
+# f1.turn_off()
 
-# Create a class Movie:
-
-# movie name
-# rating
-# duration
-
-# Add method:
-
-# check if movie is hit (rating > 8)
-# STATIC METHOD PRACTICE
-# 19
-
-# Create a class with:
-
-# a static method that prints welcome message.
-# 20
-
-# Create a class MathUtils with static methods:
-
-# square
-# cube
-
-# ABSTRACTION / REAL-WORLD THINKING
-# 21
-
-# Create a class Fan:
-
-# state ON/OFF
-# methods:
-# turn on
-# turn off
-# 22
-
-# Create a class Car:
-
-# accelerate
-# brake
-# show speed
+#Q22Create a class Car:accelerate,brake,show speed.
+# class Car:
+#     def __init__(self):
+#         self.speed = 0
+#     def accelerate(self):
+#         self.speed += 10
+#         print("Car accelerated")
+#     def brake(self):
+#         if self.speed >= 10:
+#             self.speed -= 10
+#         print("Brake applied")
+#     def show_speed(self):
+#         print("Current speed:", self.speed)
+# c1 = Car()
+# c1.accelerate()
+# c1.accelerate()
+# c1.show_speed()
+# c1.brake()
+# c1.show_speed()
